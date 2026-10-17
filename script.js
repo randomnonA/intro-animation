@@ -4,12 +4,13 @@ let rc;
 
 function setup() {
   createCanvas(1200, 1200);
-  frameRate(5);
+  frameRate(10);
 }
 
 function draw() {
   //Having background replaces everything else since the code calls on draw all the time
   background(165, 219, 191);
+  //greyscale ONLY
   rc = [random(0), random(100), random(200), random(255)];
   let cc = rc[frameCount % rc.length];
   fill(cc);
